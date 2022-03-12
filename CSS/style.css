@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', serif;
+    
+}
+h1{
+    color: aliceblue;
+    padding: 2rem;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.navbar li{
+    padding:1rem 2.2rem 1rem 2.2rem ;   
+}
+
+
+.navbar li a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    text-shadow: 1px 1px 6px #fff;
+    border-bottom: 1px solid white;
+}
+
+
+.medio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("/IMAGENES/gif.gif");  /* fallback for old browsers */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.medio img{
+    width: 32rem;
+    height: 32rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px dotted rgba(240, 248, 255, 0.195);
+    padding: 2rem;
+
+}
+
+.medio img:hover{
+    border: 4px dotted rgba(240, 248, 255, 0.195);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    border-bottom: 1px solid white;
+    padding: 1rem;
+}
+
+.text{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.contacts{
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #2AF598 0%, #08AEEA 100%);
+    border-top: 1px solid white;
+    color: aliceblue;
+    padding: 5rem 15rem 1rem 15rem;
+}
+
+.contacts h2{
+    padding: 1rem;
+}
+
+#name{
+    display: flex;
+    flex-direction: row;
+}
+
+#name img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+    border: 4px solid white;
+}
+
+
+#name p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    padding: 1rem;
+    line-height: 2.5;
+    display: inline-block;
+}
+
+.redes ul li{
+    list-style: none;
+}
+
+.redes a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+.redes img{
+  width: 20px;
+  height: 20px;
+}
+
+.redes__label{
+    width: 5rem;
+    display: inline-block;
+}
+
+#copy{
+    padding: 1rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/*SECCION MEDIO */
+
+.medio__about img{
+    width: 25rem;
+    height: 25rem;
+}
+
+.medio__a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("/IMAGENES/gif.gif");  /* fallback for old browsers */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.medio__a img{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px dotted rgba(240, 248, 255, 0.195);
+  padding: 1.5rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 12rem 4rem 12rem;
+    font-family: "Roboto Serif", sans-serif;
+    font-size: 20px;
+}
+
+
+.texto__parra{
+    padding: 5rem;
+
+}
+
+.texto__parra p{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: #08AEEA;
+  border: 1px solid black;
+  color: aliceblue;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: transparent;
+  transition: all 0.5s ease;
+  color: black;
+  border: 1px solid #0787b5;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+.card__image--0 {
+  background-image: url(../IMAGENES/alejandro-romanazzi-alerom.jpg);
+}
+.card__image--1 {
+  background-image: url(../IMAGENES/Certificado_C.jpg);
+}
+.card__image--2 {
+  background-image: url(../IMAGENES/Alejandro-Romanazzi-Time-Management-8211-Exam-Course-Certificate-International-Business-Management-Institute.jpg);
+}
+.card__image--3 {
+  background-image: url(../IMAGENES/certificado_Ciberseguridad.jpg);
+}
+.card__image--4 {
+  background-image: url(../IMAGENES/Certificado_HTML.jpg);
+}
+.card__image--5 {
+  background-image: url(../IMAGENES/certificado_IntroDesarrolloWebI.jpg);
+}
+.card__image--6 {
+  background-image: url(../IMAGENES/certificado_IntroDesarrolloWebII.jpg);
+}
+.card__image--7 {
+  background-image: url(../IMAGENES/Certificado_PyBegginers.jpg);
+}
+.card__image--8 {
+  background-image: url(../IMAGENES/Certificados\ EILAR\ 2021-7.jpg);
+}
+.card__image--9 {
+  background-image: url(../IMAGENES/Alejandro-Romanazzi-General-English-Certification-Test-GECT-GECT-International-Business-Management-Institute.jpg);
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+
+
+.h1 {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif, 'arial';
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  padding: 15px 35px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #08AEEA;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+            0 2px 10px 0 rgba(0,0,0,0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+            0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+      width:100%;
+      float: none;
+      text-align:center;
+  }
+}
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 100px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .medio{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .text h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 28px;
+  }
+
+  .text p{
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .contacts{
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  .redes{
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+  }
+  #name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #name p{
+    padding: 1rem;
+  }
+
+  .redes ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .redes__label{
+    width: 7rem;
+  }
+}
+
+@media (min-width: 528px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+  }
+  .medio{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .text h1, p{
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .contacts{
+    padding: 4rem 6rem 1rem 6rem;
+  }
+  .redes{
+    padding: 1rem;
+    line-height: 1;
+    display: inline-block;
+  }
+  #name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #name p{
+    padding: 0;
+  }
+
+  .redes ul li{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .redes__label{
+    width: 6rem;
+  }
+}
+
+@media (min-width: 768px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .medio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .text h1, p{
+    text-align: center;
+    padding: 1rem;
+  }
+  .contacts{
+    padding: 5rem 10rem 1rem 10rem;
+  }
+  .redes{
+    padding: 1rem;
+    line-height: 2.5;
+    display: inline-block;
+  }
+  #name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #name p{
+    padding: 0;
+  }
+
+  .redes ul li{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .redes__label{
+    width: 6rem;
+  }
+
+}
+
+@media (min-width: 1024px){
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .medio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .text h1, p{
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .contacts{
+    padding: 5rem 15rem 1rem 15rem;
+  }
+  .redes{
+    padding: 1rem;
+    line-height: 2.5;
+    display: inline-block;
+  }
+  #name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #name p{
+    padding: 0;
+  }
+
+  .redes ul li{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .redes__label{
+    width: 6rem;
+  }
+}
+
+
+
