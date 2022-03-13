@@ -8,10 +8,11 @@
 }
 h1{
     color: aliceblue;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     font-size: 27px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid aliceblue;
 }
 
 .navbar{
@@ -55,7 +56,7 @@ h1{
 .medio img{
     width: 32rem;
     height: 32rem;
-    margin: 3rem;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,10 +147,11 @@ h1{
 }
 
 #copy{
-    padding: 1rem;
+    padding: 2rem;
     font-size: 15px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 /*SECCION MEDIO */
@@ -476,6 +478,18 @@ font-style: normal;
     justify-content: center;
     align-items: center;
   }
+  
+  .input-container{
+    width: 70%;
+    margin: 10px auto 10px auto;
+  }
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0.4rem 0.8rem 0.4rem;
+  }
+
   .navbar{
     display: flex;
     flex-direction: column;
@@ -486,13 +500,15 @@ font-style: normal;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 3rem 0.5rem 3rem 0.5rem;
   }
+  
 
   .text h1{
     text-align: center;
     padding: 1rem;
     font-size: 28px;
+    border-bottom: 0;
   }
 
   .text p{
@@ -507,7 +523,7 @@ font-style: normal;
 
   .redes{
     padding: 0;
-    line-height: 1;
+    line-height: 2.5;
     display: flex;
     justify-content: center;
   }
@@ -537,6 +553,19 @@ font-style: normal;
     justify-content: center;
     align-items: center;
   }
+
+  .input-container{
+    width: 650px;
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+  }
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem 2rem 5rem;
+  }
+
   .navbar{
     display: flex;
     flex-direction: row;
@@ -587,6 +616,19 @@ font-style: normal;
     justify-content: center;
     align-items: center;
   }
+
+  .input-container{
+    width: 650px;
+    margin: 15px auto 15px auto;
+    max-width: 100%;
+  }
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 10rem 4rem 10rem;
+  }
+
   .navbar{
     display: flex;
     flex-direction: row;
@@ -637,6 +679,19 @@ font-style: normal;
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .input-container{
+    width: 650px;
+    margin: 20px auto 20px auto;
+    max-width: 100%;
+  }
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    padding: 6rem 15rem 6rem 15rem;
+  }
+
   .navbar{
     display: flex;
     flex-direction: row;
